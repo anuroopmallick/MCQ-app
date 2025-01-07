@@ -1,0 +1,156 @@
+.App {
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f9;
+  margin: 0;
+}
+
+.Container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px 30px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.Form {
+  display: flex;
+  flex-direction: column;
+}
+
+.Form p {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.Options {
+  margin-bottom: 20px;
+}
+
+.Option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.Option input {
+  margin-right: 10px;
+}
+
+.Option p {
+  margin: 0;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.Snackbar {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  text-align: center;
+  animation: fade-in-out 2s;
+}
+
+@keyframes fade-in-out {
+  0%,
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .Container {
+    padding: 15px 20px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
+
+/* Summary styles */
+.Summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  animation: fade-in 0.5s ease-in-out;
+}
+
+.Summary h1 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.Summary p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Animation for the summary appearance */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive design for summary */
+@media (max-width: 600px) {
+  .Summary {
+    padding: 20px;
+  }
+
+  .Summary h1 {
+    font-size: 22px;
+  }
+
+  .Summary p {
+    font-size: 16px;
+  }
+}
+
+.SummaryContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
